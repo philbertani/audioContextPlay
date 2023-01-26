@@ -1,0 +1,46 @@
+<!doctype html>
+
+<body>
+
+    <div id="container">
+
+        <div id="overlay">Click to play</div>
+
+        <div id="header">
+            <h1><a href="/">Web Audio API</a></h1>
+        </div>
+
+        <div id="wrapper">
+
+            <div id="content">
+
+                <div class="post">
+                    <p>
+                        Trying to play 2 mp3 starting at the same time
+                    </p>
+                    <p>
+
+                    <p><button style="display: block">Play/pause</button></p>
+
+                    <script src="shared.js"></script>
+                    <script src="playAudio.js"></script>
+                    
+                    <script>
+                        var sample = new playMultiple();
+                        document.querySelector('button').addEventListener('click', function () {
+                            sample.play();
+                        });
+                    </script>
+
+                    </p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
